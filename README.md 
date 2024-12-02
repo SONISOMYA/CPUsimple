@@ -1,0 +1,23 @@
+# CPU Simulator
+
+## Overview
+This project simulates a simple CPU that can execute basic arithmetic operations (ADD, SUB) and memory operations (LOAD, STORE) over multiple cycles.
+
+## Features
+- Multi-cycle execution: fetch, decode, execute, memory access, write-back.
+- Supports basic arithmetic operations and memory access.
+- Real-time visualization of the CPU's state (registers and memory).
+
+## How to Run
+1. Clone or download the project.
+2. Ensure `program.txt` and `registers.txt` are populated with the required instructions and register values.
+3. Run the `cpu.py` script.
+
+### Requirements:
+- Python 3.x
+- `matplotlib` for visualization (`pip install matplotlib`)
+
+## How to Extend
+- Add more operations to the ALU.
+- Implement branching logic.
+- Improve memory management with different types of memory (caches, etc.).
