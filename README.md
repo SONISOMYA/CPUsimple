@@ -29,6 +29,8 @@ This **CPU Simulator** is a simple representation of how a CPU (Central Processi
 3. Create a `program.txt` file in the same directory with the instructions you want to run.
 4. Run the simulator:
 ```bash
+python cpu.py
+
 
 //To install dependencies, use the following:
 pip install -r requirements.txt
