@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 
 def visualize_cpu_state(cpu):
-    # Display the registers and memory for each cycle
+    
     fig, ax = plt.subplots()
     ax.set_title(f"CPU State - Cycle {cpu.cycle}")
     ax.bar(cpu.registers.keys(), cpu.registers.values(), color='blue', alpha=0.7, label="Registers")
