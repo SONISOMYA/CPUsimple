@@ -4,9 +4,9 @@ from visualization import visualize_cpu_state
 
 class CPU:
     def __init__(self):
-        self.registers = {"R1": 0, "R2": 0}  # Initialize registers
+        self.registers = {"R1": 0, "R2": 0} 
         self.memory = Memory()
-        self.pc = 0  # Program Counter
+        self.pc = 0 
         self.cycle = 0
         self.alu = ALU()
 
@@ -20,7 +20,7 @@ class CPU:
         operand1_index = int(instruction[2])  
         operand2_index = int(instruction[3])  
 
-        # Map operands to registers (e.g., '0' -> 'R1', '1' -> 'R2')
+        
         operand1 = f"R{operand1_index + 1}"
         operand2 = f"R{operand2_index + 1}"
         
@@ -51,9 +51,8 @@ class CPU:
             self.pc += 1
             visualize_cpu_state(self)
 
-# Example program memory (List of binary instruction strings)
+
 program_memory = ["0010", "0110", "1001", "1110"]
 
-# Running the CPU simulation
 cpu = CPU()
 cpu.run(program_memory)
