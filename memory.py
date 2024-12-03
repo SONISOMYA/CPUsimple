@@ -1,6 +1,6 @@
 class Memory:
     def __init__(self):
-        self.memory = {"0": 10, "1": 20}  # Example memory
+        self.memory = {"0": 10, "1": 20}  
 
     def load(self, address):
         return self.memory.get(str(address), 0)
